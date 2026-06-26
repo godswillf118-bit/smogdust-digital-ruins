@@ -1,7 +1,7 @@
-import ronin from "@/assets/ronin.png.asset.json";
-import scout from "@/assets/scout.png.asset.json";
-import officer from "@/assets/officer.png.asset.json";
-import ranger from "@/assets/ranger.png.asset.json";
+import ronin from "@/assets/ronin-cut.png.asset.json";
+import scout from "@/assets/scout-cut.png.asset.json";
+import officer from "@/assets/officer-cut.png.asset.json";
+import ranger from "@/assets/ranger-cut.png.asset.json";
 
 export interface SmogChar {
   name: string;
