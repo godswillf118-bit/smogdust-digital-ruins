@@ -1,11 +1,15 @@
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Reveal, Eyebrow } from "./ui";
 import { characters } from "./data";
 
 function DustParticles({ color }: { color: string }) {
-  const bits = useMemo(
-    () =>
+  const [bits, setBits] = useState<
+    { id: number; x: number; delay: number; duration: number; size: number }[]
+  >([]);
+
+  useEffect(() => {
+    setBits(
       Array.from({ length: 9 }).map((_, i) => ({
         id: i,
         x: (Math.random() - 0.5) * 130,
@@ -13,8 +17,9 @@ function DustParticles({ color }: { color: string }) {
         duration: 1.4 + Math.random() * 1.2,
         size: 2 + Math.random() * 3,
       })),
-    [],
-  );
+    );
+  }, []);
+
   return (
     <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
       {bits.map((b) => (
@@ -29,6 +34,7 @@ function DustParticles({ color }: { color: string }) {
     </div>
   );
 }
+
 
 
 export function Collection() {
