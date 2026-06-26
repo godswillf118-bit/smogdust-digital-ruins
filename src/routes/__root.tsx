@@ -77,19 +77,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "SMOGDUST — Tiny Creatures. Big Collections." },
+      {
+        name: "description",
+        content:
+          "SMOGDUST is a collection of 4,444 tiny creatures born from forgotten code, hoarding the treasures humanity left behind on an abandoned blockchain. We clean what others forget.",
+      },
+      { name: "author", content: "SMOGDUST" },
+      { name: "theme-color", content: "#d7e6ee" },
+      { property: "og:title", content: "SMOGDUST — Tiny Creatures. Big Collections." },
+      {
+        property: "og:description",
+        content:
+          "4,444 forgotten creatures roaming the ruins of an ancient blockchain. We clean what others forget.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@SmogDust" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap",
       },
     ],
   }),
