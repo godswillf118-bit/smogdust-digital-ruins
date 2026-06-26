@@ -94,6 +94,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@SmogDust" },
+      { name: "twitter:title", content: "SMOGDUST — Tiny Creatures. Big Collections." },
+      { name: "description", content: "A premium Web3 NFT landing page for Smogdust, featuring cinematic animations and a mysterious digital ruin theme." },
+      { property: "og:description", content: "A premium Web3 NFT landing page for Smogdust, featuring cinematic animations and a mysterious digital ruin theme." },
+      { name: "twitter:description", content: "A premium Web3 NFT landing page for Smogdust, featuring cinematic animations and a mysterious digital ruin theme." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/uXhb9zTCUwRYYu6bRvmFLqRklXp1/social-images/social-1782486254310-237593.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/uXhb9zTCUwRYYu6bRvmFLqRklXp1/social-images/social-1782486254310-237593.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
